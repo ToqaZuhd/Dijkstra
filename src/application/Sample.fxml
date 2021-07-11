@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="518.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <ImageView fx:id="MapImg" fitHeight="466.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Project_3/map2.jpg" />
+         </image>
+      </ImageView>
+      <Pane fx:id="paneR" layoutX="242.0" prefHeight="463.0" prefWidth="278.0" style="-fx-background-image: url('file:C:/Users/THINK/Pictures/WB.jpg');">
+         <children>
+            <Label fx:id="titleLab" layoutX="18.0" layoutY="-13.0" prefHeight="98.0" prefWidth="243.0" text="Shortest path between cities">
+               <font>
+                  <Font name="Baskerville Old Face" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="sourceLab" layoutX="23.0" layoutY="79.0" prefHeight="34.0" prefWidth="66.0" text="Source ">
+               <font>
+                  <Font name="Andalus" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="targetLab" layoutX="23.0" layoutY="113.0" prefHeight="50.0" prefWidth="66.0" text="Target">
+               <font>
+                  <Font name="Andalus" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="CBsource" layoutX="89.0" layoutY="84.0" prefWidth="150.0" />
+            <ComboBox fx:id="CBtarget" layoutX="89.0" layoutY="125.0" prefWidth="150.0" />
+            <Button fx:id="runButton" layoutX="164.0" layoutY="169.0" mnemonicParsing="false" onAction="#find" prefHeight="25.0" prefWidth="75.0" text="RUN" />
+            <Label fx:id="distanceLab" layoutX="19.0" layoutY="200.0" prefHeight="41.0" prefWidth="75.0" text="Distance">
+               <font>
+                  <Font name="Andalus" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DistanceTF" layoutX="20.0" layoutY="232.0" prefHeight="34.0" prefWidth="200.0" />
+            <Label fx:id="pathLab" layoutX="17.0" layoutY="279.0" prefHeight="36.0" prefWidth="66.0" text="Path">
+               <font>
+                  <Font name="Andalus" size="22.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="pathTF" layoutX="17.0" layoutY="313.0" prefHeight="125.0" prefWidth="200.0" text="&#10;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
